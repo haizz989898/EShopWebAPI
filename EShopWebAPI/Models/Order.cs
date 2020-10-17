@@ -9,11 +9,9 @@
 
 namespace EShopWebAPI.Models
 {
-    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
-    using System.Xml.Serialization;
-
+    
     public partial class Order
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -26,9 +24,7 @@ namespace EShopWebAPI.Models
         public Nullable<int> CustomerID { get; set; }
         public Nullable<System.DateTime> OrderDate { get; set; }
         public string ShipAddress { get; set; }
-        [JsonIgnore]
-        [XmlIgnore]
-
+    
         public virtual Customer Customer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }

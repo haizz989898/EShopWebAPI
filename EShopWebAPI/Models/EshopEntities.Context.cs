@@ -30,5 +30,8 @@ namespace EShopWebAPI.Models
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Function> Functions { get; set; }
+        public virtual DbSet<Role> Roles { get; set; }
     }
 }

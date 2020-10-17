@@ -173,6 +173,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Account.cs">
+      <DependentUpon>EshopEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BasicAuthenticationAttribute.cs" />
     <Compile Include="Models\Category.cs">
       <DependentUpon>EshopEntities.tt</DependentUpon>
     </Compile>
@@ -194,6 +198,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>EshopEntities.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Function.cs">
+      <DependentUpon>EshopEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Order.cs">
       <DependentUpon>EshopEntities.tt</DependentUpon>
     </Compile>
@@ -203,6 +210,10 @@
     <Compile Include="Models\Product.cs">
       <DependentUpon>EshopEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Role.cs">
+      <DependentUpon>EshopEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\UserValidate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

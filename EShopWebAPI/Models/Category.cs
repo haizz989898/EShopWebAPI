@@ -9,11 +9,9 @@
 
 namespace EShopWebAPI.Models
 {
-    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
-    using System.Xml.Serialization;
-
+    
     public partial class Category
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -25,9 +23,7 @@ namespace EShopWebAPI.Models
         public int CategoryID { get; set; }
         public string CategoryName { get; set; }
         public string Description { get; set; }
-        [JsonIgnore]
-        [XmlIgnore]
-
+    
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Product> Products { get; set; }
     }
